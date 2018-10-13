@@ -104,7 +104,7 @@ chown odoo:root /opt/odoo/backups
 
 
 ---------------------
-## 12- Librerias Ncesarias
+## 12- Librerias Necesarias
 
 ```linux
 pip install -r /opt/odoo/server/requirements.txt
