@@ -104,7 +104,7 @@ chown odoo:root /opt/odoo/backups
 
 
 ---------------------
-## 12- Creando un directorio para almacenar el archivo de logs
+## 12- Librerias Ncesarias
 
 ```linux
 pip install -r /opt/odoo/server/requirements.txt
