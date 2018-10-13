@@ -487,3 +487,59 @@ grep "242893" /var/log/odoo/odoo-server.log
 
 
 ---------------------
+
+## k11 – Error PIP
+
+```linux
+pip install Babel==2.3.4
+pip install chardet==3.0.4
+pip install decorator==4.0.10
+pip install docutils==0.12
+pip install ebaysdk==2.1.5
+pip install feedparser==5.2.1
+pip install gevent==1.1.2 ; sys_platform != 'win32' and python_version < '3.7'
+pip install gevent==1.3.4 ; sys_platform != 'win32' and python_version >= '3.7'
+pip install greenlet==0.4.10 ; python_version < '3.7'
+pip install greenlet==0.4.13 ; python_version >= '3.7'
+pip install html2text==2016.9.19
+pip install Jinja2==2.8.1
+pip install libsass==0.12.3
+pip install lxml==3.7.1 ; sys_platform != 'win32' and python_version < '3.7'
+pip install lxml==4.2.3 ; sys_platform != 'win32' and python_version >= '3.7'
+pip install lxml ; sys_platform == 'win32'
+pip install Mako==1.0.4
+pip install MarkupSafe==0.23
+pip install mock==2.0.0
+pip install num2words==0.5.4
+pip install ofxparse==0.16
+pip install passlib==1.6.5
+pip install Pillow==4.0.0
+pip install psutil==4.3.1; sys_platform != 'win32'
+pip install psycopg2==2.7.3.1; sys_platform != 'win32'
+pip install pydot==1.2.3
+pip install pyldap==2.4.28; sys_platform != 'win32'
+pip install pyparsing==2.1.10
+pip install PyPDF2==1.26.0
+pip install pyserial==3.1.1
+pip install python-dateutil==2.5.3
+pip install pytz==2016.7
+pip install pyusb==1.0.0
+pip install qrcode==5.3
+pip install reportlab==3.3.0
+pip install requests==2.11.1
+pip install suds-jurko==0.6
+pip install vatnumber==1.2
+pip install vobject==0.9.3
+pip install Werkzeug==0.11.15
+pip install XlsxWriter==0.9.3
+pip install xlwt==1.3.*
+pip install xlrd==1.0.0
+pip install pypiwin32 ; sys_platform == 'win32'
+```
+
+
+---------------------
+
+
+
+
