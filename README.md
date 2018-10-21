@@ -59,8 +59,8 @@ apt-get install unzip
 
 ```linux
 cd /opt/odoo/
-wget https://github.com/odoo/odoo/archive/10.0.zip
-unzip 10.0.zip
+wget https://github.com/odoo/odoo/archive/12.0.zip
+unzip 12.0.zip
 ```
 
 
@@ -68,7 +68,7 @@ unzip 10.0.zip
 ## 8- Ingresamos en la carpeta /opt/odoo y descargamos la fuente para la versión comunity
 
 ```linux
-mv odoo-10.0 server
+mv odoo-12.0 server
 chown -R odoo: server
 ```
 
