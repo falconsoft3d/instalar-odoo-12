@@ -77,8 +77,8 @@ chown -R odoo: server
 ## 9- Instalación de librerias, actualizamos pip e instalamos dependencias python de Odoo
 
 ```linux
-sudo apt-get install python-setuptools
-python /usr/lib/python2.7/dist-packages/easy_install.py pip
+apt install python3-setuptools
+python3 /usr/lib/python3/dist-packages/easy_install.py pip
 ```
 
 
@@ -108,7 +108,7 @@ chown odoo:root /opt/odoo/backups
 ## 12- Librerias Necesarias
 
 ```linux
-pip install -r /opt/odoo/server/requirements.txt
+pip3 install -r /opt/odoo/server/requirements.txt
 ```
 
 
