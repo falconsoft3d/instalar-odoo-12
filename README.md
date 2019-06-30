@@ -116,7 +116,32 @@ nginx -s reload
 ```linux
 mkdir /var/log/odoo/
 chown odoo:root /var/log/odoo
+
+mkdir /etc/odoo
+cp /opt/odoo/server/debian/odoo.conf /etc/odoo/odoo.conf
+chown odoo: /etc/odoo/odoo.conf
+chmod 640 /etc/odoo/odoo.conf
 ```
+
+## 13 - Creamos Carpeta Extra-addons
+```linux
+mkdir /opt/odoo/server/extra-addons
+chown odoo: /opt/odoo/ -R
+```
+
+## 14 - Configuramos el archivo conf
+```linux
+nano /etc/odoo/odoo.conf
+```
+```linux
+db_user = odoo
+db_password = CLAVE DEL USUARIO  ODOO EN POSTGRES
+addons_path = /opt/odoo/server/addons
+logfile = /var/log/odoo/odoo-server.log
+logrotate = True
+```
+
+
 
 
 
