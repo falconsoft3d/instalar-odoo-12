@@ -141,6 +141,15 @@ logfile = /var/log/odoo/odoo-server.log
 logrotate = True
 ```
 
+## 15 - Odoo Incio
+```linux
+sudo cp /opt/odoo/server/debian/init /etc/init.d/odoo && sudo chmod +x /etc/init.d/odoo
+sudo ln -s /opt/odoo/server/odoo-bin /usr/bin/odoo
+update-rc.d odoo defaults
+sudo service odoo start
+```
+
+
 
 
 
