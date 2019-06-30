@@ -43,6 +43,41 @@ sudo apt-get update && sudo apt-get install postgresql postgresql-server-dev-10 
 sudo apt-get install libsasl2-dev
 ```
 
+## 5- Descargamos Odoo 12
+
+```linux
+sudo git clone --depth 1 --branch 12.0 https://github.com/odoo/odoo /opt/odoo/server
+sudo pip3 install -r /opt/odoo/server/requirements.txt
+```
+
+## 6- Usamos npm, que es el gestor de paquetes Node.js para instalar less
+
+```linux
+sudo npm install -g less less-plugin-clean-css -y && sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+## 7- Instalar wkhtmltopdf para generar PDF en odoo
+
+```linux
+sudo apt install xfonts-base xfonts-75dpi -y
+cd /tmp
+wget http://security.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1_amd64.deb && sudo dpkg -i libpng12-0_1.2.54-1ubuntu1.1_amd64.deb
+wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.xenial_amd64.deb && sudo dpkg -i wkhtmltox_0.12.5-1.xenial_amd64.deb
+sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/
+sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/
+```
+
+## 8- Hacemos que Odoo inicie Automatico
+
+```linux
+update-rc.d odoo defaults
+sudo service odoo start
+# Para que postgres se inicie automáticamente
+update-rc.d postgresql enable
+```
+
+
+
 
 
 
