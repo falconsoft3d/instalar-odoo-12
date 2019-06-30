@@ -35,6 +35,16 @@ createuser --createdb --username postgres --no-createrole --no-superuser --pwpro
 exit
 ```
 
+## 5- Instalamos Librerias
+
+```linux
+sudo apt-get update && sudo apt-get install postgresql postgresql-server-dev-10 build-essential python3-pil python3-lxml python-ldap3 python3-dev python3-pip python3-setuptools npm nodejs git gdebi libldap2-dev libxml2-dev libxslt1-dev libjpeg-dev -y
+
+sudo apt-get install libsasl2-dev
+```
+
+
+
 
 
 
