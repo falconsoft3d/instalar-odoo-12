@@ -157,6 +157,16 @@ git clone git@bitbucket.org:marlonodoo/addons_general.git
 git clone git@bitbucket.org:marlonodoo/addons_chile.git
 ```
 
+## 17 - Tools
+```linux
+sudo service odoo stop
+su - odoo -s /bin/bash
+python2 /opt/odoo/server/odoo-bin -c /etc/odoo/odoo.conf -d db12-chile-sii -u all --stop-after-init
+sudo service odoo restart
+
+tail -f /var/log/odoo/odoo-server.log
+```
+
 
 
 
