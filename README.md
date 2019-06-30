@@ -79,7 +79,7 @@ update-rc.d postgresql restart
 ## 9- Configuramos Postgree
 
 ```linux
-nano /etc/postgresql/11/main/pg_hba.conf
+nano /etc/postgresql/10/main/pg_hba.conf
 ```
 ```linux
 local   all             all        peer
