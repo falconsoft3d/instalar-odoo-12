@@ -136,7 +136,7 @@ nano /etc/odoo/odoo.conf
 ```linux
 db_user = odoo
 db_password = CLAVE DEL USUARIO  ODOO EN POSTGRES
-addons_path = /opt/odoo/server/addons
+addons_path = /opt/odoo/server/addons,/opt/odoo/server/extra-addons/addons_3ros,/opt/odoo/server/extra-addons/addons_general,/opt/odoo/server/extra-addons/addons_chile
 logfile = /var/log/odoo/odoo-server.log
 logrotate = True
 ```
@@ -147,6 +147,14 @@ sudo cp /opt/odoo/server/debian/init /etc/init.d/odoo && sudo chmod +x /etc/init
 sudo ln -s /opt/odoo/server/odoo-bin /usr/bin/odoo
 update-rc.d odoo defaults
 sudo service odoo start
+```
+
+## 16 - Clonar repositorio
+```linux
+cd /opt/odoo/server/extra-addons/
+git clone git@bitbucket.org:marlonodoo/addons_3ros.git
+git clone git@bitbucket.org:marlonodoo/addons_general.git
+git clone git@bitbucket.org:marlonodoo/addons_chile.git
 ```
 
 
