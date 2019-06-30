@@ -73,9 +73,50 @@ sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/
 update-rc.d odoo defaults
 sudo service odoo start
 # Para que postgres se inicie automáticamente
-update-rc.d postgresql enable
+update-rc.d postgresql restart
 ```
 
+## 9- Configuramos Postgree
+
+```linux
+nano /etc/postgresql/11/main/pg_hba.conf
+```
+```linux
+local   all             all        peer
+
+*Sustituimos por:
+
+local   all             all       trust
+```
+
+## 10 - Reiniciando
+```linux
+service postgresql restart
+/etc/init.d/odoo restart
+```
+
+## 11 - Instalamos ngix para cambiar el puerto
+```linux
+sudo apt-get install nginx -y
+cd /etc/nginx/sites-available
+git clone https://github.com/falconsoft3d/ngix-para-odoo-erp/
+cd ngix-para-odoo-erp/
+sudo cp /etc/nginx/sites-available/ngix-para-odoo-erp/default.conf /etc/nginx/sites-available/default.conf
+cd ..
+mv default default-temp
+mv default.conf default
+
+cd /etc/nginx/sites-available
+nano default
+server_name j.wemakeyourdayeasy.com 11.64.123.12;
+nginx -s reload
+```
+
+## 12 - Log
+```linux
+mkdir /var/log/odoo/
+chown odoo:root /var/log/odoo
+```
 
 
 
