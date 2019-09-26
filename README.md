@@ -154,7 +154,7 @@ sudo service odoo start
 cd /opt/odoo/server/extra-addons/
 git clone git@bitbucket.org:marlonodoo/addons_3ros.git
 git clone git@bitbucket.org:marlonodoo/addons_general.git
-git clone git@bitbucket.org:marlonodoo/addons_chile.git
+git clone git@bitbucket.org:marlonodoo/odoo_chile.git
 ```
 
 ## 17 - Tools
