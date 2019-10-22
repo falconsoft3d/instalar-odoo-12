@@ -43,10 +43,11 @@ sudo apt-get update && sudo apt-get install postgresql postgresql-server-dev-10 
 sudo apt-get install libsasl2-dev
 ```
 
-## Respaldos
+## Respaldos FTP
 ```
 mkdir /opt/odoo/backups
 chown odoo:root /opt/odoo/backups
+sudo pip3 install paramiko
 ```
 
 ## 5- Descargamos Odoo 12
