@@ -136,7 +136,7 @@ nano /etc/odoo/odoo.conf
 ```linux
 db_user = odoo
 db_password = CLAVE DEL USUARIO  ODOO EN POSTGRES
-addons_path = /opt/odoo/server/addons,/opt/odoo/server/extra-addons/addons_3ros,/opt/odoo/server/extra-addons/addons_general,/opt/odoo/server/extra-addons/addons_chile
+addons_path = /opt/odoo/server/addons,/opt/odoo/server/extra-addons/addons_3ros,/opt/odoo/server/extra-addons/addons_general,/opt/odoo/server/extra-addons/odoo_chile
 logfile = /var/log/odoo/odoo-server.log
 logrotate = True
 ```
@@ -176,7 +176,67 @@ sudo apt-get install python3 python-dev python3-dev \
      python-pip
 ```
 
+# Librerias
+```linux
+pip3 install Babel==2.3.4
+pip3 install chardet==3.0.4
+pip3 install decorator==4.0.10
+pip3 install docutils==0.12
+pip3 install ebaysdk==2.1.5
+pip3 install feedparser==5.2.1
+pip3 install gevent==1.1.2 ; sys_platform != 'win32' and python_version < '3.7'
+pip3 install gevent==1.3.4 ; sys_platform != 'win32' and python_version >= '3.7'
+pip3 install greenlet==0.4.10 ; python_version < '3.7'
+pip3 install greenlet==0.4.13 ; python_version >= '3.7'
+pip3 install html2text==2016.9.19
+pip3 install Jinja2==2.10.1
+pip3 install libsass==0.12.3
+pip3 install lxml==3.7.1 ; sys_platform != 'win32' and python_version < '3.7'
+pip3 install lxml==4.2.3 ; sys_platform != 'win32' and python_version >= '3.7'
+pip3 install lxml ; sys_platform == 'win32'
+pip3 install Mako==1.0.4
+pip3 install MarkupSafe==0.23
+pip3 install mock==2.0.0
+pip3 install num2words==0.5.6
+pip3 install ofxparse==0.16
+pip3 install passlib==1.6.5
+pip3 install Pillow==4.0.0
+pip3 install psutil==4.3.1; sys_platform != 'win32'
+pip3 install psycopg2==2.7.3.1; sys_platform != 'win32'
+pip3 install pydot==1.2.3
+pip3 install pyldap==2.4.28; sys_platform != 'win32'
+pip3 install pyparsing==2.1.10
+pip3 install PyPDF2==1.26.0
+pip3 install pyserial==3.1.1
+pip3 install python-dateutil==2.5.3
+pip3 install pytz==2016.7
+pip3 install pyusb==1.0.0
+pip3 install qrcode==5.3
+pip3 install reportlab==3.3.0
+pip3 install requests==2.20.0
+pip3 install suds-jurko==0.6
+pip3 install vatnumber==1.2
+pip3 install vobject==0.9.3
+pip3 install Werkzeug==0.11.15
+pip3 install XlsxWriter==0.9.3
+pip3 install xlwt==1.3.*
+pip3 install xlrd==1.0.0
+pip3 install pypiwin32 ; sys_platform == 'win32'
+```
 
+```linux
+pip3 install xmltodict
+pip3 install dicttoxml
+pip3 install cchardet
+pip3 install cryptography
+sudo pip3 install pyOpenSSL
+sudo apt-get install python-m2crypto
+sudo apt-get install libssl-dev swig python3-dev gcc
+sudo pip3 install M2Crypto
+sudo pip3 install SOAPpy
+sudo pip3 install signxml
+sudo pip3 install pdf417gen
+```linux
 
 
 
