@@ -236,7 +236,7 @@ sudo pip3 install M2Crypto
 sudo pip3 install SOAPpy
 sudo pip3 install signxml
 sudo pip3 install pdf417gen
-```linux
+```
 
 
 
