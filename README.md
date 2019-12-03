@@ -245,7 +245,72 @@ sudo pip3 install signxml
 sudo pip3 install pdf417gen
 ```
 
+# Odoo Enterprise
+```linux
+pip3 install appdirs==1.4.3
+pip3 install attrs==19.2.0
+pip3 install Babel==2.3.4
+pip3 install beautifulsoup4==4.8.1
+pip3 install cached-property==1.5.1
+pip3 install cchardet==2.1.4
+pip3 install certifi==2019.9.11
+pip3 install cffi==1.13.2
+pip3 install chardet==3.0.4
+pip3 install cryptography==2.8
+pip3 install decorator==4.0.10
+pip3 install defusedxml==0.6.0
+pip3 install dicttoxml==1.7.4
+pip3 install docutils==0.12
+pip3 install ebaysdk==2.1.5
+pip3 install feedparser==5.2.1
+pip3 install gevent==1.3.4
+pip3 install greenlet==0.4.13
+pip3 install html2text==2016.9.19
+pip3 install idna==2.7
+pip3 install isodate==0.6.0
+pip3 install Jinja2==2.10.1
+pip3 install libsass==0.12.3
+pip3 install lxml==4.2.3
+pip3 install Mako==1.0.4
+pip3 install MarkupSafe==0.23
+pip3 install mock==2.0.0
+pip3 install num2words==0.5.6
+pip3 install ofxparse==0.16
+pip3 install olefile==0.46
+pip3 install passlib==1.6.5
+pip3 install pbr==5.4.3
+pip3 install Pillow==4.0.0
+pip3 install polib==1.1.0
+pip3 install psutil==4.3.1
+pip3 install psycopg2==2.7.3.1
+pip3 install pycparser==2.19
+pip3 install pydot==1.2.3
+pip3 install pyldap==2.4.28
+pip3 install pyparsing==2.1.10
+pip3 install PyPDF2==1.26.0
+pip3 install pyserial==3.1.1
+pip3 install python-dateutil==2.5.3
+pip3 install python-stdnum==1.11
+pip3 install pytz==2016.7
+pip3 install pyusb==1.0.0
+pip3 install qrcode==5.3
+pip3 install reportlab==3.3.0
+pip3 install requests==2.20.0
+pip3 install requests-toolbelt==0.9.1
+pip3 install six==1.12.0
+pip3 install soupsieve==1.9.4
+pip3 install suds-jurko==0.6
+pip3 install urllib3==1.24.3
+pip3 install vatnumber==1.2
+pip3 install vobject==0.9.3
+pip3 install Werkzeug==0.11.15
+pip3 install xlrd==1.0.0
+pip3 install XlsxWriter==0.9.3
+pip3 install xlwt==1.3.0
+pip3 install xmltodict==0.12.0
+pip3 install zeep==3.1.0
 
+```
 
 
 
