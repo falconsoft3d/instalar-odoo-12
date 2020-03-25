@@ -23,6 +23,7 @@ apt-get update && apt-get upgrade -y
 ## 2- Creamos el usuario Odoo
 
 ```linux
+sudo userdel -r odoo
 adduser --system --home=/opt/odoo --group odoo
 ```
 
