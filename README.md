@@ -88,10 +88,9 @@ sudo ln -s /usr/local/bin/wkhtmltoimage /usr/bin/
 ## 8- Hacemos que Odoo inicie Automatico
 
 ```linux
-update-rc.d odoo defaults
-sudo service odoo start
-# Para que postgres se inicie automáticamente
-update-rc.d postgresql restart
+cp /opt/odoo/server/debian/init /etc/init.d/odoo
+chmod 755 /etc/init.d/odoo
+chown root: /etc/init.d/odoo
 ```
 
 ## 9- Configuramos Postgree
