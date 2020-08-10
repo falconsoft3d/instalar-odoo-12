@@ -75,6 +75,10 @@ sudo npm install -g less less-plugin-clean-css -y && sudo ln -s /usr/bin/nodejs 
 ```
 
 ## 7- Instalar wkhtmltopdf para generar PDF en odoo
+```linux
+sudo wget http://se.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
+```
 
 ```linux
 sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
